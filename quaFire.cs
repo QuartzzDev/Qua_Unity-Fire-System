@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using System.Collections.Generic;
 using System.Collections;
-using EvolveGames;
+
 
 public class FireController : MonoBehaviour
 {
