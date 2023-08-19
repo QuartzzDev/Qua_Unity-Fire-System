@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using System.Collections.Generic;
 using System.Collections;
+using EvolveGames;
 
 public class FireController : MonoBehaviour
 {
@@ -91,6 +92,35 @@ public class FireController : MonoBehaviour
         }
 
 
+
+        /*
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f)            // Anim Hatası Giderme (Eğer silah geçişi yapıyorsanız buraları düzenleyebilirsiniz.)
+        {
+            isFiring = false;
+            gunAnimator.SetBool("isFiring", false);
+            gunAnimator.StopPlayback();
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        {
+            isFiring = false;
+            gunAnimator.SetBool("isFiring", false);
+            gunAnimator.StopPlayback();
+        }
+        */
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))            // Anim Hatası Giderme (Eğer silah geçişi yapıyorsanız buraları düzenleyebilirsiniz.)
+        {
+            isFiring = false;
+            gunAnimator.SetBool("isFiring", false);
+            gunAnimator.StopPlayback();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            isFiring = false;
+            gunAnimator.SetBool("isFiring", false);
+            gunAnimator.StopPlayback();
+        }
+    }
 
     public IEnumerator AutoFire()
     {
